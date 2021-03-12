@@ -10,12 +10,10 @@ public class Product implements Comparable<Product> {
     }
     @Override
     public int compareTo(Product o) {
-        int c=0;
-        c=(this.name.compareTo(o.name)>1)?1:-1;
-       if (c==0){
-            c=(this.price.compareTo(o.price)<1)?1:-1;
-       }
-        return c;
+        if (this.name.compareTo(o.name)>=1)return 1;
+        else
+        if (this.name.compareTo(o.name)<=-1)return -1;
+        return 0;
     }
 
     @Override
