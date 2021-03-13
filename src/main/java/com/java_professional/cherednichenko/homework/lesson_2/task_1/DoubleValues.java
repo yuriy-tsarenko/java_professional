@@ -10,7 +10,7 @@ public class DoubleValues {
         List<String> stringList = new ArrayList<>();
         Scanner scanner = new Scanner(System.in);
         for (int i = 0; i < 5; i++) {
-            System.out.print("Input word: ");
+            System.out.print("Input word:  ");
             stringList.add(scanner.nextLine());
         }
         doubleValue(stringList);

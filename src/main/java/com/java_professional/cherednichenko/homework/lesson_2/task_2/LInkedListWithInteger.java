@@ -9,15 +9,15 @@ public class LInkedListWithInteger {
     public void getIntegerReverseList(LinkedList<Integer> linkedList) {
         Comparator<Integer> comparator = Collections.reverseOrder();
         linkedList.sort(comparator);
-        for (Integer i : linkedList) {
-            System.out.println(i);
+        for (Integer integer : linkedList) {
+            System.out.println(integer);
         }
     }
 
     public void getIntegerShuffleList(LinkedList<Integer> linkedList) {
         Collections.shuffle(linkedList);
-        for (Integer i : linkedList) {
-            System.out.println(i);
+        for (Integer integer : linkedList) {
+            System.out.println(integer);
         }
     }
 
