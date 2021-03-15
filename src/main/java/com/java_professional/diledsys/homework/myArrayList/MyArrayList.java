@@ -2,19 +2,16 @@ package com.java_professional.diledsys.homework.myArrayList;
 
 import java.util.Arrays;
 
-public class MyArrayList<E> implements MyList {
-private int size;
-private volatile int  cursor;
-private Object arr[];
+public class MyArrayList<E> implements MyList<E> {
+    private int size;
+    private E[] arr;
 
     public MyArrayList() {
-        this.size=1;
-        arr = new Object[size];
+        arr = (E[]) new Object[10];
     }
 
-    public MyArrayList(int size) {
-        this.size =size;
-        arr = new Object[size];
+    public MyArrayList(int capacity) {
+        arr = (E[]) new Object[capacity];
     }
 
     public int size() {
@@ -23,74 +20,82 @@ private Object arr[];
 
     @Override
     public boolean isEmpty() {
-        if (size==0)return true;
-        return false;
+        return size == 0;
     }
 
     @Override
     public boolean contains(Object o) {
-        for (int i = 0; i <arr.length ; i++) {
-            if (arr[i].equals(o))return true;
+        for (int i = 0; i < size; i++) {
+            if (arr[i].equals(o)) return true;
         }
         return false;
     }
 
     @Override
     public int indexOf(Object o) {
-        for (int i = 0; i < arr.length; i++) {
+        for (int i = 0; i < size; i++) {
             if (o.equals(arr[i])) return i;
         }
         return -1;
     }
 
     @Override
-    public int lastIndexOf(Object o) {
-        int index=0;
-        for (int i = 0; i <arr.length ; i++) {
-            if (arr[i].equals(o)) index=i;
+    public int lastIndexOf(Object obj) {
+        for (int i = size - 1; i >= 0; i--) {
+            if (arr[i].equals(obj)) {
+                return i;
+            }
         }
-        return index;
+
+        return -1;
     }
 
     @Override
-    public Object[] toArray() {
+    public E[] toArray() {
         return arr;
     }
 
     @Override
-    public Object get(int index) {
+    public E get(int index) {
         return arr[index];
     }
 
     @Override
-    public void set(int index, Object o) {
-        if (index>size) throw new IndexOutOfBoundsException("IndexOutOfBoundsException");
-        arr[index] = o;
+    public void set(int index, E value) {
+        if (index > size) throw new IndexOutOfBoundsException("IndexOutOfBoundsException");
+        arr[index] = value;
     }
 
     @Override
-    public void add(Object o) {
-        if (cursor>=size){ grow();}
-        arr[cursor] = o;
-        cursor++;
+    public void add(E value) {
+        if (arr.length == size) {
+            grow();
+        }
+
+        arr[size] = value;
+        size++;
     }
 
     @Override
     public Object remove(Object o) {
-        if (!contains(o))return null;
-        for (int i = indexOf(o); i < arr.length-1; i++){
-            arr[i]=arr[i+1];
-        }
-        --size;
+        if (!contains(o)) return null;
+        if (arr.length - 1 - indexOf(o) >= 0)
+            System.arraycopy(arr, indexOf(o) + 1, arr, indexOf(o), arr.length - 1 - indexOf(o));
+        size--;
         return o;
     }
 
     @Override
     public void clear() {
-     arr = Arrays.copyOf(arr,0);
-     size=0;
+        arr = (E[]) new Object[10];
+        size = 0;
     }
+
     private void grow() {
-     arr = Arrays.copyOf(arr,++size);
+        E[] newArr = (E[]) new Object[size * 2];
+
+        System.arraycopy(arr, 0, newArr, 0, size);
+
+        arr = newArr;
     }
 }
