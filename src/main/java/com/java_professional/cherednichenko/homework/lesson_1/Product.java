@@ -1,14 +1,23 @@
 package com.java_professional.cherednichenko.homework.lesson_1;
 
-import lombok.*;
-
-import java.util.*;
+import lombok.ToString;
+import lombok.AllArgsConstructor;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
+import lombok.Getter;
+import java.util.Comparator;
+import java.util.Iterator;
+import java.util.TreeSet;
 
 @NoArgsConstructor
 @AllArgsConstructor
 @Getter
 @Setter
 @ToString
+//Задание 2
+//        Вывод на экран элементов List: Создать список, заполнить его на 10 элементов и вывести на экран содержимое используя iterator.
+//        Дополнительное задание:
+//        Создать класс Product c 5-мя полями на выбор и реализовать сортирование в разных направлениях учитывая все поля
 public class Product {
     private String nameOfProduct;
     private String typeOfProduct;
