@@ -1,6 +1,6 @@
 package com.java_professional.tsarenko.classwork.lesson1.final_example;
 
-public class ProductDto implements Comparable<ProductDto>{
+public class ProductDto implements Comparable<ProductDto> {
     private Integer totalAmount;
 
     private Integer price;
@@ -20,10 +20,10 @@ public class ProductDto implements Comparable<ProductDto>{
 
     @Override
     public String toString() {
-        return "ProductDto{" +
-                "totalAmount=" + totalAmount +
-                ", price=" + price +
-                '}';
+        return "ProductDto{"
+                + "totalAmount=" + totalAmount
+                + ", price=" + price
+                + '}';
     }
 
     @Override
