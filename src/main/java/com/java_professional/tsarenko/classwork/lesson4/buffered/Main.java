@@ -14,11 +14,12 @@ public class Main {
 
     public static void main(String[] args) {
         try (BufferedReader br = new BufferedReader(new InputStreamReader(
-                new FileInputStream("D:\\IT\\IdeaProjects\\java_professional\\src\\main\\java\\com\\" +
-                        "java_professional\\tsarenko\\classwork\\lesson4\\buffered\\Main.java")));
+                new FileInputStream("D:\\IT\\IdeaProjects\\java_professional\\src\\main\\java\\com\\"
+                        + "java_professional\\tsarenko\\classwork\\lesson4\\buffered\\Main.java")));
              BufferedWriter bw = new BufferedWriter(
-                     new OutputStreamWriter(new FileOutputStream("D:\\IT\\IdeaProjects\\java_professional\\" +
-                             "src\\main\\java\\com\\java_professional\\tsarenko\\classwork\\lesson4\\buffered\\Main2.java")))){
+                     new OutputStreamWriter(new FileOutputStream("D:\\IT\\IdeaProjects\\java_professional\\"
+                             + "src\\main\\java\\com\\java_professional\\tsarenko\\classwork\\lesson4\\buffered\\"
+                             + "Main2.java")))) {
 
             int c;
             while ((c = br.read()) != -1) {

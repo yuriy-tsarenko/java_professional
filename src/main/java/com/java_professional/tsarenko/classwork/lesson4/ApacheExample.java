@@ -17,8 +17,10 @@ public class ApacheExample {
 
 
     public static void work() throws IOException {
-        File file = FileUtils.getFile("D:\\IT\\IdeaProjects\\java_professional\\src\\main\\java\\com\\java_professional\\tsarenko\\classwork\\lesson4\\readingFile\\example.txt");
-        File dir = new File("D:\\IT\\IdeaProjects\\java_professional\\src\\main\\java\\com\\java_professional\\tsarenko\\classwork\\lesson4");
+        File file = FileUtils.getFile("D:\\IT\\IdeaProjects\\java_professional\\src\\main\\java\\com\\"
+                + "java_professional\\tsarenko\\classwork\\lesson4\\readingFile\\example.txt");
+        File dir = new File("D:\\IT\\IdeaProjects\\java_professional\\src\\main\\java\\com\\"
+                + "java_professional\\" + "tsarenko\\classwork\\lesson4");
         FileUtils.copyFileToDirectory(file, dir);
         String data = FileUtils.readFileToString(file, Charset.defaultCharset());
         System.out.println(data);

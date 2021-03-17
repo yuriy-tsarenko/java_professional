@@ -11,14 +11,16 @@ public class Main {
 
     public static void main(String[] args) {
         try (PrintWriter printWriter = new PrintWriter(new OutputStreamWriter(System.out), true)) {
-            File file = new File("D:\\IT\\IdeaProjects\\java_professional\\src\\main\\java\\com\\java_professional\\tsarenko\\classwork\\lesson4\\fileInfo\\Main.java");
+            File file = new File("D:\\IT\\IdeaProjects\\java_professional\\src\\main\\java\\com\\"
+                    + "java_professional\\tsarenko\\classwork\\lesson4\\fileInfo\\Main.java");
             printWriter.println();
             printWriter.println("File \"" + file.getName() + "\" " + (file.exists() ? "" : "not ") + "found");
             printWriter.println("Can " + (file.canRead() ? "" : "not ") + "read");
             printWriter.println("Can " + (file.canWrite() ? "" : "not ") + "write");
             printWriter.println("Length " + file.length() + " ");
             printWriter.println();
-            File d = new File("D:\\IT\\IdeaProjects\\java_professional\\src\\main\\java\\com\\java_professional\\tsarenko\\classwork\\lesson4");
+            File d = new File("D:\\IT\\IdeaProjects\\java_professional\\src\\main\\java\\com\\"
+                    + "java_professional\\tsarenko\\classwork\\lesson4");
             printWriter.println("Folder:");
             if (d.exists() && d.isDirectory()) {
                 String[] s = d.list();

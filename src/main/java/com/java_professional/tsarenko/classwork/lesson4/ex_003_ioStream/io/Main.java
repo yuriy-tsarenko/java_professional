@@ -14,18 +14,18 @@ public class Main {
     public static void main(String[] args) throws IOException {
         InputStream inputStream = null;
         // пишем в файл
-        try (OutputStream outputStream = new FileOutputStream("D:\\IT\\IdeaProjects\\java_professional\\src\\" +
-                "main\\java\\com\\java_professional\\tsarenko\\classwork\\lesson4\\ex_003_ioStream\\io\\test.txt")) {
-            byte[] bWrite = {11, 21, 3, 40, 56, 77, 1};
+        try (OutputStream outputStream = new FileOutputStream("D:\\IT\\IdeaProjects\\java_professional\\src\\"
+                + "main\\java\\com\\java_professional\\tsarenko\\classwork\\lesson4\\ex_003_ioStream\\io\\test.txt")) {
+            byte[] bytes = {11, 21, 3, 40, 56, 77, 1};
 
-            for (int x = 0; x < bWrite.length; x++) {
-                outputStream.write(bWrite[x]); // writes the bytes
+            for (int x = 0; x < bytes.length; x++) {
+                outputStream.write(bytes[x]); // writes the bytes
             }
             outputStream.flush();
 
             //читаем файл
-            inputStream = new FileInputStream("D:\\IT\\IdeaProjects\\java_professional\\src\\" +
-                    "main\\java\\com\\java_professional\\tsarenko\\classwork\\lesson4\\ex_003_ioStream\\io\\test.txt");
+            inputStream = new FileInputStream("D:\\IT\\IdeaProjects\\java_professional\\src\\main\\java\\com\\"
+                    + "java_professional\\tsarenko\\classwork\\lesson4\\ex_003_ioStream\\io\\test.txt");
             int size = inputStream.available();
 
             for (int i = 0; i < size; i++) {

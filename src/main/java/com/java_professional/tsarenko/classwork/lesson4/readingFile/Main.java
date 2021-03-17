@@ -9,8 +9,8 @@ import java.io.PrintWriter;
 public class Main {
     public static void main(String[] args) throws Exception {
         // Создали объект файла по ссылке
-        File file = new File("D:\\IT\\IdeaProjects\\java_professional\\src\\main\\java\\com\\" +
-                "java_professional\\tsarenko\\classwork\\lesson4\\readingFile\\example.txt");
+        File file = new File("D:\\IT\\IdeaProjects\\java_professional\\src\\main\\java\\com\\"
+                + "java_professional\\tsarenko\\classwork\\lesson4\\readingFile\\example.txt");
 
         // Считываем текстовый файл в пакете
         BufferedReader br = new BufferedReader(new FileReader(file));

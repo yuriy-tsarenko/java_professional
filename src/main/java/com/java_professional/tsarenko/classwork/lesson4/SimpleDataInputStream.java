@@ -1,6 +1,12 @@
 package com.java_professional.tsarenko.classwork.lesson4;
 
-import java.io.*;
+import java.io.BufferedInputStream;
+import java.io.BufferedOutputStream;
+import java.io.DataInputStream;
+import java.io.DataOutputStream;
+import java.io.FileInputStream;
+import java.io.FileOutputStream;
+import java.io.IOException;
 
 public class SimpleDataInputStream {
     public static void main(String[] args) {

@@ -12,6 +12,6 @@ public class SimpleScanner {
         scanner = new Scanner(System.in);
         String str2 = scanner.nextLine();
 
-        System.out.println("Number " + i + " " + "Float " + f + " " + "Word " + str + " " + "Line " +str2);
+        System.out.println("Number " + i + " " + "Float " + f + " " + "Word " + str + " " + "Line " + str2);
     }
 }
