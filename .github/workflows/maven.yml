@@ -5,9 +5,9 @@ name: Java CI with Maven
 
 on:
   push:
-    branches: [ master, development, feature_diledsys, feature_Cherednichenko, feature_daryna ]
+    branches: [ master, development, feature_diledsys, feature_Cherednichenko, feature_daryna, feature_pnivchuk ]
   pull_request:
-    branches: [ master, development, feature_diledsys, feature_Cherednichenko, feature_daryna ]
+    branches: [ master, development, feature_diledsys, feature_Cherednichenko, feature_daryna, feature_pnivchuk ]
 
 jobs:
   build:
