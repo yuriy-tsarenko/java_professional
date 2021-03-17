@@ -14,8 +14,8 @@ public class Main {
         states.push("Великобритания");
 
         // Получаем первый элемент без удаления
-        String sFirst = states.getFirst();
-        String sLast = states.getLast();
+        String first = states.getFirst();
+        String last = states.getLast();
 
         while (states.peek() != null) {
             // Извлечение c начала
@@ -46,9 +46,9 @@ class Person {
 
     @Override
     public String toString() {
-        return "Person{" +
-                "name='" + name + '\'' +
-                '}';
+        return "Person{"
+                + "name='" + name + '\''
+                + '}';
     }
 }
 

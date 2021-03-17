@@ -56,8 +56,7 @@ class SimpleComparatorStudent implements Comparator<SimpleComparableStudent> {
 
 class Main {
     public static void main(String[] args) {
-        SimpleComparableStudent[] myStudents = {
-                new SimpleComparableStudent("Yevhenii", 333),
+        SimpleComparableStudent[] myStudents = {new SimpleComparableStudent("Yevhenii", 333),
                 new SimpleComparableStudent("Andrew", 222),
                 new SimpleComparableStudent("Igor", 111),
                 new SimpleComparableStudent("Peter", 300),
