@@ -5,11 +5,10 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        LinkedList<Integer> linkedList = getLinkedList();
-        LInkedListWithInteger list = new LInkedListWithInteger();
-        list.getIntegerReverseList(linkedList);
-        list.getIntegerShuffleList(linkedList);
-        list.getMinimum(linkedList);
+        LInkedListWithInteger list = new LInkedListWithInteger(getLinkedList());
+        list.getIntegerReverseList();
+        list.getIntegerShuffleList();
+        list.getMinimum();
     }
 
     public static LinkedList<Integer> getLinkedList() {
