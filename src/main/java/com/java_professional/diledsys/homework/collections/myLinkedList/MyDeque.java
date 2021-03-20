@@ -1,4 +1,4 @@
-package com.java_professional.diledsys.homework.collections.myArrayList;
+package com.java_professional.diledsys.homework.collections.myLinkedList;
 
 public interface MyDeque<E> {
 

@@ -1,4 +1,7 @@
-package com.java_professional.diledsys.homework.collections.myArrayList;
+package com.java_professional.diledsys.homework.collections.myLinkedList;
+
+import com.java_professional.diledsys.homework.collections.myArrayList.MyArrayList;
+import com.java_professional.diledsys.homework.collections.myLinkedList.MyDeque;
 
 import java.util.Spliterator;
 

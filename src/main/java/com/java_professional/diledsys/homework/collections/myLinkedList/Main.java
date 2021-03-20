@@ -1,8 +1,4 @@
-package com.java_professional.diledsys.homework.collections.myArrayList;
-
-import java.util.Arrays;
-import java.util.LinkedList;
-import java.util.List;
+package com.java_professional.diledsys.homework.collections.myLinkedList;
 
 public class Main {
 
@@ -25,7 +21,7 @@ public class Main {
 
         //System.out.println(myList.get(5));
         System.out.println();
-        System.out.println(myList.removeLast());
+//        System.out.println(myList.removeLast());
         for (int i = 0; i <myList.size() ; i++) {
             System.out.println(myList.get(i));
         }
