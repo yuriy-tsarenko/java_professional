@@ -13,8 +13,8 @@ public class Write {
     static Logger logger = Logger.getLogger(Write.class.getName());
 
     public static void main(String[] args) {
-        String message = "Создайте файл, запишите в него произвольные данные и закройте файл. " +
-                "Затем снова откройте этот файл, прочитайте из него данные и выведете их на консоль.";
+        String message = "Создайте файл, запишите в него произвольные данные и закройте файл. "
+                + "Затем снова откройте этот файл, прочитайте из него данные и выведете их на консоль.";
         try (FileOutputStream fileOS = new FileOutputStream("notes.txt")) {
             byte[] buffer = message.getBytes();
 
