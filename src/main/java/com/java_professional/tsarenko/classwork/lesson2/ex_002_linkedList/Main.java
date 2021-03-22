@@ -1,6 +1,10 @@
 package com.java_professional.tsarenko.classwork.lesson2.ex_002_linkedList;
 
-import java.util.*;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Collections;
+import java.util.LinkedList;
+import java.util.List;
 
 public class Main {
     public static void main(String[] args) throws Exception {

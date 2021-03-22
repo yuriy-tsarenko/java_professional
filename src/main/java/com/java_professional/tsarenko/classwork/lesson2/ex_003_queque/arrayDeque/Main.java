@@ -17,6 +17,7 @@ public class Main {
         String sFirst = states.getFirst();
         String sLast = states.getLast();
 
+
         while (states.peek() != null) {
             // Извлечение c начала
             System.out.println(states.pop());

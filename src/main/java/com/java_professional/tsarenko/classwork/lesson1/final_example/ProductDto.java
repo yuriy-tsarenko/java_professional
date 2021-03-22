@@ -24,6 +24,7 @@ public class ProductDto implements Comparable<ProductDto>{
                 "totalAmount=" + totalAmount +
                 ", price=" + price +
                 '}';
+
     }
 
     @Override
