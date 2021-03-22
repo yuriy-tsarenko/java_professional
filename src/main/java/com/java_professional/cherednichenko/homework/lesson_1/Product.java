@@ -16,9 +16,11 @@ import java.util.TreeSet;
 @Setter
 @ToString
 //Задание 2
-//        Вывод на экран элементов List: Создать список, заполнить его на 10 элементов и вывести на экран содержимое используя iterator.
+//        Вывод на экран элементов List: Создать список,
+//        заполнить его на 10 элементов и вывести на экран содержимое используя iterator.
 //        Дополнительное задание:
-//        Создать класс Product c 5-мя полями на выбор и реализовать сортирование в разных направлениях учитывая все поля
+//        Создать класс Product c 5-мя полями на выбор и реализовать
+//        сортирование в разных направлениях учитывая все поля
 public class Product {
     private String nameOfProduct;
     private String typeOfProduct;
@@ -54,12 +56,15 @@ public class Product {
         public int compare(Product o1, Product o2) {
             int result;
             result = Integer.compare(o1.getQuantity(), o2.getQuantity());
-            if (result == 0)
+            if (result == 0) {
                 result = o1.getNameOfProduct().compareTo(o2.getNameOfProduct());
-            if (result == 0)
+            }
+            if (result == 0) {
                 result = o1.getTypeOfProduct().compareTo(o2.getTypeOfProduct());
-            if (result == 0)
+            }
+            if (result == 0) {
                 result = Integer.compare(o1.getPrice(), o2.getPrice());
+            }
             return result;
         }
     }
