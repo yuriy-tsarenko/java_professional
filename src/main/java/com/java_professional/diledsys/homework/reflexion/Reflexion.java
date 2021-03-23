@@ -13,7 +13,7 @@ public class Reflexion {
         } catch (ClassNotFoundException e) {
             e.printStackTrace();
         }
-        String nameC = classDiscowery != null ? classDiscowery.arrayType().getSimpleName() : null;
+        String nameC = classDiscowery != null ? classDiscowery.getSimpleName() : null;
         System.out.println("Имя класса: " + nameC);
         String classModifier = modifierType(classDiscowery.getSuperclass().getModifiers());
         System.out.println("модификатор класса: " + classModifier);
