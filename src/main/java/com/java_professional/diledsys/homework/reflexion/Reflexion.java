@@ -14,7 +14,7 @@ public class Reflexion {
             e.printStackTrace();
         }
         String nameC = classDiscowery != null ? classDiscowery.arrayType().getSimpleName() : null;
-        System.out.println("Имя класса: " +nameC);
+        System.out.println("Имя класса: " + nameC);
         String classModifier = modifierType(classDiscowery.getSuperclass().getModifiers());
         System.out.println("модификатор класса: " + classModifier);
         System.out.println("список интерфейсов");
