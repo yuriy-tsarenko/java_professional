@@ -5,75 +5,39 @@ import java.util.Iterator;
 import java.util.Spliterator;
 import java.util.function.Consumer;
 
-public abstract class MyAbstractList<T> implements Iterable<T> {
-    T get(int index) {
-        return null;
-    }
+public interface MyAbstractList<T> extends Iterable<T> {
+    T get(int index);
 
-    boolean isEmpty() {
-        return false;
-    }
+    boolean isEmpty();
 
-    int size() {
-        return 0;
-    }
+    int size();
 
-    int indexOf(Object o) {
-        return 0;
-    }
+    int indexOf(Object o);
 
-    boolean contains(Object o) {
-        return false;
-    }
+    boolean contains(Object o);
 
-    int lastIndexOf(Object o) {
-        return 0;
-    }
+    int lastIndexOf(Object o);
 
-    Object[] toArray() {
-        return new Object[0];
-    }
+    Object[] toArray();
 
-    public T set(int index, T element) {
-        return null;
-    }
+    public T set(int index, T element);
 
-    void resize(int newLength) {
+    void resize(int newLength);
 
-    }
+    void add(T element);
 
-    void add(T element) {
+    T remove(T element);
 
-    }
+    void clear();
 
-    T remove(T element) {
-        return null;
-    }
+    boolean addAll(Collection<? extends T> c);
 
-    void clear() {
-
-    }
-
-    boolean addAll(Collection<? extends T> c) {
-        return false;
-    }
-
-    boolean removeAll(Collection<?> c) {
-        return false;
-    }
+    boolean removeAll(Collection<?> c);
 
     @Override
-    public void forEach(Consumer<? super T> action) {
-    }
+    public void forEach(Consumer<? super T> action);
 
     @Override
-    public Iterator<T> iterator() {
-        return null;
-    }
-
-    @Override
-    public Spliterator<T> spliterator() {
-        return null;
-    }
+    public Iterator<T> iterator();
 
 }

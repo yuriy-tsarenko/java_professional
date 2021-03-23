@@ -9,6 +9,7 @@ public class Main {
         strings.add("dddd");
         strings.add("ddd");
         strings.remove("dddd");
+        System.out.println(strings);
         for (String s : strings) {
             System.out.println(s);
         }

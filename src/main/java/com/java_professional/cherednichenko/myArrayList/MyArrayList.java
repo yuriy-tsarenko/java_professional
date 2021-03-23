@@ -1,12 +1,15 @@
 package com.java_professional.cherednichenko.myArrayList;
 
-import java.util.*;
+import java.util.Arrays;
+import java.util.Collection;
+import java.util.Iterator;
+import java.util.Objects;
 import java.util.function.Consumer;
 
 
-public class MyArrayList<T> extends MyAbstractList<T> {
-    private final int INIT_SIZE = 16;
-    private Object[] array = new Object[INIT_SIZE];
+public class MyArrayList<T> implements MyAbstractList<T> {
+    private final int size = 16;
+    private T[] array = (T[]) new Object[size];
     private int pointer = 0;
 
     public T get(int index) {
@@ -22,9 +25,11 @@ public class MyArrayList<T> extends MyAbstractList<T> {
     }
 
     public int indexOf(Object o) {
-        for (int i = 0; i < pointer; i++)
-            if (o.equals(array[i]))
+        for (int i = 0; i < pointer; i++) {
+            if (o.equals(array[i])) {
                 return i;
+            }
+        }
         return -1;
     }
 
@@ -33,9 +38,11 @@ public class MyArrayList<T> extends MyAbstractList<T> {
     }
 
     public int lastIndexOf(Object o) {
-        for (int i = array.length - 1; i >= 0; i--)
-            if (o.equals(array[i]))
+        for (int i = array.length - 1; i >= 0; i--) {
+            if (o.equals(array[i])) {
                 return i;
+            }
+        }
         return -1;
     }
 
@@ -50,37 +57,45 @@ public class MyArrayList<T> extends MyAbstractList<T> {
     }
 
     public void resize(int newLength) {
-        Object[] newArray = new Object[newLength];
+        T[] newArray = (T[]) new Object[newLength];
         System.arraycopy(array, 0, newArray, 0, pointer);
         array = newArray;
     }
 
     public void add(T element) {
-        if (pointer == array.length - 1)
+        if (pointer == array.length - 1) {
             resize(array.length * 2);
+        }
         array[pointer++] = element;
     }
 
     @Override
     public boolean equals(Object o) {
-        if (this == o) return true;
-        if (!(o instanceof MyArrayList)) return false;
+        if (this == o) {
+            return true;
+        }
+        if (!(o instanceof MyArrayList)) {
+            return false;
+        }
         MyArrayList<?> that = (MyArrayList<?>) o;
         return pointer == that.pointer && Arrays.equals(array, that.array);
     }
 
     @Override
     public int hashCode() {
-        int result = Objects.hash(INIT_SIZE, pointer);
+        int result = Objects.hash(size, pointer);
         result = 31 * result + Arrays.hashCode(array);
         return result;
     }
 
     public T remove(T element) {
-        if (!contains(element)) return null;
-        if (pointer + 1 - indexOf(element) >= 0)
+        if (!contains(element)) {
+            return null;
+        }
+        if (pointer + 1 - indexOf(element) >= 0) {
             System.arraycopy(array, indexOf(element) + 1, array, indexOf(element),
                     pointer + 1 - indexOf(element));
+        }
         pointer--;
         return element;
     }
@@ -94,7 +109,9 @@ public class MyArrayList<T> extends MyAbstractList<T> {
 
     public boolean addAll(Collection<? extends T> c) {
         Object[] a = c.toArray();
-        if (a.length == 0) return false;
+        if (a.length == 0) {
+            return false;
+        }
         for (int i = 0; i < a.length - 1; i++) {
             add((T) a[i]);
         }
@@ -103,7 +120,9 @@ public class MyArrayList<T> extends MyAbstractList<T> {
 
     public boolean removeAll(Collection<?> c) {
         Object[] a = c.toArray();
-        if (a.length == 0) return false;
+        if (a.length == 0) {
+            return false;
+        }
         for (int i = 0; i < a.length - 1; i++) {
             remove((T) a[i]);
         }
@@ -119,8 +138,9 @@ public class MyArrayList<T> extends MyAbstractList<T> {
         Object[] objects = new Object[pointer];
         System.arraycopy(array, 0, objects, 0, pointer);
         Objects.requireNonNull(action);
-        for (int i = 0; i < pointer; i++)
+        for (int i = 0; i < pointer; i++) {
             action.accept(elementAt(objects, i));
+        }
     }
 
     @Override
@@ -144,5 +164,14 @@ public class MyArrayList<T> extends MyAbstractList<T> {
                 throw new UnsupportedOperationException();
             }
         };
+    }
+
+    @Override
+    public String toString() {
+        T[] arrayToString = (T[]) new Object[pointer];
+        if (arrayToString.length - 1 >= 0) {
+            System.arraycopy(array, 0, arrayToString, 0, pointer);
+        }
+        return Arrays.toString(arrayToString);
     }
 }
