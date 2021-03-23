@@ -10,7 +10,7 @@ import java.io.IOException;
 //        Создайте файл, запишите в него произвольные данные и закройте файл.
 //        атем снова откройте этот файл, прочитайте из него данные и выведете их на консоль.
 public class Write {
-    static Logger logger = Logger.getLogger(Write.class.getName());
+    static Logger logger = Logger.getLogger(Write.class);
 
     public static void main(String[] args) {
         String message = "Создайте файл, запишите в него произвольные данные и закройте файл. "
@@ -19,6 +19,8 @@ public class Write {
             byte[] buffer = message.getBytes();
 
             fileOS.write(buffer, 0, buffer.length);
+            //"A close will always also flush in FileOutputStream family, but it doesn't work with FileWriter family."
+            fileOS.flush();
             System.out.println("The file has been written");
         } catch (IOException e) {
             logger.error(e);

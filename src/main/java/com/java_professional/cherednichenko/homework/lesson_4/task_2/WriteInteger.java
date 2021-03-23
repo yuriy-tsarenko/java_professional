@@ -15,7 +15,7 @@ import java.util.Random;
 //Задание 3
 //        Создать и заполнить файл случайными целыми числами. Отсортировать содержимое файла по возрастанию
 public class WriteInteger {
-    static Logger logger = Logger.getLogger(WriteInteger.class.getName());
+    static Logger logger = Logger.getLogger(WriteInteger.class);
 
     public static void main(String[] args) {
         List<String> arrayList = new ArrayList<>();
@@ -25,7 +25,6 @@ public class WriteInteger {
                 writer.write(String.valueOf(random.nextInt()));
                 writer.append('\n');
             }
-            writer.flush();
         } catch (IOException e) {
 
             logger.error(e);
