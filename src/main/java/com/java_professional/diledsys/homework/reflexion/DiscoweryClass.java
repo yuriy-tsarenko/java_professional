@@ -1,4 +1,4 @@
-package diledsys.homework.reflexion;
+package com.java_professional.diledsys.homework.reflexion;
 
 class DiscoweryClass {
 
