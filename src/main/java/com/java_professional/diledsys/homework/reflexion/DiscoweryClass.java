@@ -2,13 +2,13 @@ package diledsys.homework.reflexion;
 
 class DiscoweryClass {
 
-    public int n = 5;
+    public int count = 5;
     public String stringPublic;
-    private String str;
+    private String string;
 
-    public DiscoweryClass(int n, String str, String stringPublic) {
-        this.n = n;
-        this.str = str;
+    public DiscoweryClass(int count, String str, String stringPublic) {
+        this.count = count;
+        this.string = string;
         this.stringPublic = stringPublic;
     }
 
