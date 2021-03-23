@@ -21,9 +21,9 @@ public class Product implements Comparable<Product> {
 
     @Override
     public String toString() {
-        return "\n Product{" +
-                "name: " + name +
-                " price: " + price +
-                '}';
+        return "\n Product{"
+                +"name: " + name
+                +" price: " + price
+                +'}';
     }
 }
