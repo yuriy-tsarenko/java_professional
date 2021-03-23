@@ -1,7 +1,5 @@
 package com.java_professional.diledsys.homework.lesson1.product;
 
-import diledsys.homework.lesson1.product.Product;
-
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
