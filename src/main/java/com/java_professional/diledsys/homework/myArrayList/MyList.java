@@ -9,15 +9,15 @@ public interface MyList<E> {
 
     int indexOf(E o);
 
-   int lastIndexOf(Object o);
+    int lastIndexOf(Object o);
 
     E[] toArray();
 
     Object get(int index);
 
-    void set(int index,E o);
+    void set(int index, E o);
 
-   void add(E o);
+    void add(E o);
 
     Object remove(E o);
 

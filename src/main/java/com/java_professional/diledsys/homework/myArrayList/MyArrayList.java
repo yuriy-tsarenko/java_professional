@@ -1,7 +1,5 @@
 package com.java_professional.diledsys.homework.myArrayList;
 
-import java.util.Arrays;
-
 public class MyArrayList<E> implements MyList<E> {
     private int size;
     private E[] arr;
@@ -93,9 +91,7 @@ public class MyArrayList<E> implements MyList<E> {
 
     private void grow() {
         E[] newArr = (E[]) new Object[size * 2];
-
         System.arraycopy(arr, 0, newArr, 0, size);
-
         arr = newArr;
     }
 }
