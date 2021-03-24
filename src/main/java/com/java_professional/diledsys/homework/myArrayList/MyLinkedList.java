@@ -5,7 +5,7 @@ import java.util.Spliterator;
 public class MyLinkedList<E> extends MyArrayList implements MyDeque {
     private Node head;
     private Node last;
-
+private Node node;
     private int size;
 
     @Override
@@ -15,7 +15,7 @@ public class MyLinkedList<E> extends MyArrayList implements MyDeque {
 
     @Override
     public void addFirst(Object o) {
-        Node node = new Node();
+         node = new Node();
         node.element = o;
         if (head != null) {
             node.next = head;
@@ -26,7 +26,7 @@ public class MyLinkedList<E> extends MyArrayList implements MyDeque {
 
     @Override
     public void addLast(Object o) {
-        Node node = new Node();
+        node = new Node();
         node.element = o;
         if (last != null) {
             node.next = last;

@@ -7,7 +7,7 @@ import java.util.function.Consumer;
 public class MyArrayList<E> implements MyList {
     private int size;
     private volatile int cursor;
-    private Object arr[];
+    private Object[] arr;
 
     public MyArrayList() {
         this.size = 1;
@@ -25,14 +25,14 @@ public class MyArrayList<E> implements MyList {
 
     @Override
     public boolean isEmpty() {
-        if (size == 0) return true;
+        if (size == 0) {return true;}
         return false;
     }
 
     @Override
     public boolean contains(Object o) {
         for (int i = 0; i < arr.length; i++) {
-            if (arr[i].equals(o)) return true;
+            if (arr[i].equals(o)) {return true;}
         }
         return false;
     }
@@ -40,7 +40,7 @@ public class MyArrayList<E> implements MyList {
     @Override
     public int indexOf(Object o) {
         for (int i = 0; i < arr.length; i++) {
-            if (o.equals(arr[i])) return i;
+            if (o.equals(arr[i])) { return i;}
         }
         return -1;
     }
@@ -49,7 +49,7 @@ public class MyArrayList<E> implements MyList {
     public int lastIndexOf(Object o) {
         int index = 0;
         for (int i = 0; i < arr.length; i++) {
-            if (arr[i].equals(o)) index = i;
+            if (arr[i].equals(o)) {index = i;}
         }
         return index;
     }
@@ -81,7 +81,7 @@ public class MyArrayList<E> implements MyList {
 
     @Override
     public Object remove(Object o) {
-        if (!contains(o)) return null;
+        if (!contains(o)) {return null;}
         for (int i = indexOf(o); i < arr.length - 1; i++) {
             arr[i] = arr[i + 1];
         }
