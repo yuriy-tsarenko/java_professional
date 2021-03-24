@@ -8,7 +8,7 @@ public class Main {
         GregorianCalendar d = new GregorianCalendar();
         int today = d.get(Calendar.DAY_OF_MONTH);
         int month = d.get(Calendar.MONTH);
-
+        System.out.println(d);
         d.set(Calendar.DAY_OF_MONTH, 1);
 
         int weekday = d.get(Calendar.DAY_OF_WEEK);

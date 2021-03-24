@@ -7,5 +7,8 @@ public class Main {
         Date date = new Date();
         long millis = date.getTime();
         System.out.println(millis);
+
+        Date dateSecond = new Date(millis);
+        System.out.println(dateSecond);
     }
 }

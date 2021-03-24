@@ -27,11 +27,18 @@ public class Main {
 
         System.out.println("=============");
 
-        fromDateTime = localDate.atTime(12,00,57,01);
+        fromDateTime = localDate.atTime(12, 00, 57, 01);
         System.out.println(fromDateTime);
 
         System.out.println("=============");
         localDate = localDate.with(TemporalAdjusters.next(DayOfWeek.SUNDAY));
         System.out.println(localDate);
+
+        LocalDateTime dateTime = LocalDateTime.now();
+        System.out.println("dateTime: " + dateTime);
+
+        LocalDateTime plusDays = dateTime.plusDays(3L);
+        System.out.println("dateTime: " + plusDays);
+        System.out.println(plusDays.isBefore(dateTime));
     }
 }
