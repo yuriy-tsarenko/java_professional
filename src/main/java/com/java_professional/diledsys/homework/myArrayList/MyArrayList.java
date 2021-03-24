@@ -31,7 +31,9 @@ public class MyArrayList<E> implements MyList {
     @Override
     public boolean contains(Object o) {
         for (int i = 0; i < arr.length; i++) {
-            if (arr[i].equals(o)) {return true;}
+            if (arr[i].equals(o)) {
+                return true;
+            }
         }
         return false;
     }
@@ -39,7 +41,9 @@ public class MyArrayList<E> implements MyList {
     @Override
     public int indexOf(Object o) {
         for (int i = 0; i < arr.length; i++) {
-            if (o.equals(arr[i])) { return i;}
+            if (o.equals(arr[i])) {
+                return i;
+            }
         }
         return -1;
     }
@@ -48,7 +52,9 @@ public class MyArrayList<E> implements MyList {
     public int lastIndexOf(Object o) {
         int index = 0;
         for (int i = 0; i < arr.length; i++) {
-            if (arr[i].equals(o)) {index = i;}
+            if (arr[i].equals(o)) {
+                index = i;
+            }
         }
         return index;
     }
@@ -80,7 +86,9 @@ public class MyArrayList<E> implements MyList {
 
     @Override
     public Object remove(Object o) {
-        if (!contains(o)) {return null;}
+        if (!contains(o)) {
+            return null;
+        }
         if (arr.length - 1 - indexOf(o) >= 0)
             System.arraycopy(arr, indexOf(o) + 1, arr, indexOf(o), arr.length - 1 - indexOf(o));
         --size;
