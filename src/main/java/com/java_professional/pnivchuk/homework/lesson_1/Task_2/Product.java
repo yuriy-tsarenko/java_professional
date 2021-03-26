@@ -1,7 +1,9 @@
 package com.java_professional.pnivchuk.homework.lesson_1.Task_2;
 
+import java.util.Comparator;
+
 /*Создать класс Product c 5-мя полями на выбор и реализовать сортирование в разных направлениях учитывая все поля*/
-public class Product implements Comparable<Product> {
+public class Product {
     private String shop;
     private String name;
     private int price;
@@ -29,7 +31,6 @@ public class Product implements Comparable<Product> {
         return count;
     }
 
-
     public boolean isNew() {
         return isNew;
     }
@@ -38,80 +39,14 @@ public class Product implements Comparable<Product> {
         return shop;
     }
 
-    /*@Override
-    public int compareTo(Product other) {
-        int difPrice = this.price - other.getPrice();
-        int difCount = this.count - other.getCount();
-        if (this.shop.compareTo(other.getShop()) > 0) {
-            return 1;
-        } else if (this.shop.compareTo(other.getShop()) < 0) {
-            return -1;
-        } else {
-            if (this.name.compareTo(other.getName()) > 0) {
-                return 1;
-            } else if (this.name.compareTo(other.getName()) < 0) {
-                return -1;
-            } else {
-                if (difPrice > 0) {
-                    return 1;
-                } else if (difPrice < 0) {
-                    return -1;
-                } else {
-                    if (difCount > 0) {
-                        return 1;
-                    } else if (difCount < 0) {
-                        return -1;
-                    } else {
-                        if (this.isNew) {
-                            return -1;
-                        } else {
-                            return 1;
-                        }
-                    }
-                }
-            }
-        }
-
-    }*/
-
-    @Override
-    public int compareTo(Product other) {
-        int difPrice = this.price - other.getPrice();
-        int difCount = this.count - other.getCount();
-        if (this.shop.compareTo(other.getShop()) > 0) {
-            return -1;
-        } else if (this.shop.compareTo(other.getShop()) < 0) {
-            return 1;
-        } else {
-            if (this.name.compareTo(other.getName()) > 0) {
-                return -1;
-            } else if (this.name.compareTo(other.getName()) < 0) {
-                return 1;
-            } else {
-                if (difPrice > 0) {
-                    return -1;
-                } else if (difPrice < 0) {
-                    return 1;
-                } else {
-                    if (difCount > 0) {
-                        return -1;
-                    } else if (difCount < 0) {
-                        return 1;
-                    } else {
-                        if (this.isNew) {
-                            return 1;
-                        } else {
-                            return -1;
-                        }
-                    }
-                }
-            }
-        }
-
-    }
 
     @Override
     public String toString() {
-        return "Shop - " + shop + "\n Name - " + name + "\n Price - " + price + "\n Count - " + count + "\n Is new - " + isNew + "\n-------------------------------------------";
+        return "Shop - " + shop +
+                "\n Name - " + name +
+                "\n Price - " + price +
+                "\n Count - " + count +
+                "\n Is new - " + isNew +
+                "\n-------------------------------------------";
     }
 }

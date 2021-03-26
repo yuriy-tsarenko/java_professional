@@ -1,22 +1,29 @@
 package com.java_professional.pnivchuk.homework.lesson_1.Task_2;
 
-import java.util.Arrays;
+import java.util.*;
 
 /*Создать класс Product c 5-мя полями на выбор и реализовать сортирование в разных направлениях учитывая все поля*/
 public class Main {
     public static void main(String[] args) {
-        Product product = new Product("Rozetka","Laptop", 10, 5, true);
-        Product product1 = new Product("Citrus", "Phone", 11, 15,  false);
-        Product product3 = new Product("Aitrus", "Ahone", 11, 15,  false);
-        Product product4 = new Product("Aitrus", "Phone", 11, 15,  false);
-        Product product5 = new Product("Aitrus", "Ahone", 12, 15,  false);
-        Product product6 = new Product("Aitrus", "Ahone", 11, 16,  false);
-        Product product7 = new Product("Aitrus", "Ahone", 11, 16,  true);
 
-        Product[] arr = {product, product1, product3, product4, product5, product6, product7};
-        Arrays.sort(arr);
+        ArrayList<Product> list = new ArrayList<>();
+        list.add(new Product("Rozetka","Laptop", 10, 5, true));
+        list.add(new Product("Citrus", "Phone", 11, 15,  false));
+        list.add(new Product("Aitrus", "Ahone", 11, 15,  false));
+        list.add(new Product("Aitrus", "Phone", 11, 15,  false));
+        list.add(new Product("Aitrus", "Ahone", 12, 15,  false));
+        list.add(new Product("Aitrus", "Ahone", 11, 16,  false));
+        list.add(new Product("Aitrus", "Ahone", 11, 16,  true));
 
-        for (Product tmp : arr) {
+
+        Collections.sort(list, Comparator.comparing(Product::getShop)
+                .thenComparing(Product::getName)
+                .thenComparing(Product::getPrice)
+                .thenComparing(Product::getCount)
+                .thenComparing(Product::getCount));
+
+
+        for (Product tmp : list) {
             System.out.println(tmp);
         }
 
