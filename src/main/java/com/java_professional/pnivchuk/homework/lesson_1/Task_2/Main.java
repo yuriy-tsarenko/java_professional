@@ -1,6 +1,8 @@
 package com.java_professional.pnivchuk.homework.lesson_1.Task_2;
 
-import java.util.*;
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Comparator;
 
 /*Создать класс Product c 5-мя полями на выбор и реализовать сортирование в разных направлениях учитывая все поля*/
 public class Main {
@@ -21,7 +23,6 @@ public class Main {
                 .thenComparing(Product::getPrice)
                 .thenComparing(Product::getCount)
                 .thenComparing(Product::getCount));
-
 
         for (Product tmp : list) {
             System.out.println(tmp);

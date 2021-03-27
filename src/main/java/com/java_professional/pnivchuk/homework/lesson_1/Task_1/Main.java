@@ -1,5 +1,7 @@
 package com.java_professional.pnivchuk.homework.lesson_1.Task_1;
-/*Вывод на экран элементов List: Создать список, заполнить его на 10 элементов и вывести на экран содержимое используя iterator.*/
+/*Вывод на экран элементов List: Создать список, заполнить его на
+10 элементов и вывести на экран содержимое используя iterator.*/
+
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
@@ -16,7 +18,7 @@ public class Main {
 
         Iterator iter = list.iterator();
 
-        while(iter.hasNext()){
+        while (iter.hasNext()) {
             System.out.println(iter.next());
         }
     }

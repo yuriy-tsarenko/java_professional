@@ -1,7 +1,5 @@
 package com.java_professional.pnivchuk.homework.lesson_1.Task_2;
 
-import java.util.Comparator;
-
 /*Создать класс Product c 5-мя полями на выбор и реализовать сортирование в разных направлениях учитывая все поля*/
 public class Product {
     private String shop;
@@ -42,11 +40,11 @@ public class Product {
 
     @Override
     public String toString() {
-        return "Shop - " + shop +
-                "\n Name - " + name +
-                "\n Price - " + price +
-                "\n Count - " + count +
-                "\n Is new - " + isNew +
-                "\n-------------------------------------------";
+        return "Shop - " + shop
+                + "\n Name - " + name
+                + "\n Price - " + price
+                + "\n Count - " + count
+                + "\n Is new - " + isNew
+                + "\n-------------------------------------------";
     }
 }

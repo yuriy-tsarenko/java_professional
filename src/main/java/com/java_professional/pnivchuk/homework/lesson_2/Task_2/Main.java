@@ -5,7 +5,6 @@ package com.java_professional.pnivchuk.homework.lesson_2.Task_2;
 3. Найти минимальное число среди элементов списка - метод getMinimum*/
 
 import java.io.BufferedReader;
-import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.Collections;
 import java.util.LinkedList;
