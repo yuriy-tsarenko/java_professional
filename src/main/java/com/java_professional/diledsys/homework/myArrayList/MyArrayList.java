@@ -71,7 +71,9 @@ public class MyArrayList<E> implements MyList {
 
     @Override
     public void set(int index, Object o) {
-        if (index > size) {throw new IndexOutOfBoundsException("IndexOutOfBoundsException");}
+        if (index > size) {
+            throw new IndexOutOfBoundsException("IndexOutOfBoundsException");
+        }
         arr[index] = o;
     }
 
@@ -89,8 +91,9 @@ public class MyArrayList<E> implements MyList {
         if (!contains(o)) {
             return null;
         }
-        if (arr.length - 1 - indexOf(o) >= 0){
-            System.arraycopy(arr, indexOf(o) + 1, arr, indexOf(o), arr.length - 1 - indexOf(o));}
+        if (arr.length - 1 - indexOf(o) >= 0) {
+            System.arraycopy(arr, indexOf(o) + 1, arr, indexOf(o), arr.length - 1 - indexOf(o));
+        }
         --size;
         return o;
     }
