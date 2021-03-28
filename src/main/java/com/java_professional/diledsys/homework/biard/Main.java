@@ -4,7 +4,7 @@ public class Main {
     public static void main(String[] args) {
         Biard biard1 = new Biard("vorobey", "gray", 5);
         Biard biard2 = null;
-        //try {
+        //try {    
         biard2 = biard1.clone();
         // } catch (CloneNotSupportedException e) {
         //   e.printStackTrace();

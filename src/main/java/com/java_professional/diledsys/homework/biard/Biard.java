@@ -11,7 +11,6 @@ public class Biard implements Cloneable {
         this.size = size;
     }
 
-
     @Override
     public String toString() {
         return "Biard{name=" + name + " color=" + color + " size=" + size + "}";
