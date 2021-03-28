@@ -12,8 +12,8 @@ public class Serialize {
 
     public static void serializable(Object object) {
 
-        String fPath = "src\\serialize\\car.car";
-        try (FileOutputStream fs = new FileOutputStream(fPath);
+        String path = "src\\serialize\\car.car";
+        try (FileOutputStream fs = new FileOutputStream(path);
              ObjectOutputStream oos = new ObjectOutputStream(fs)) {
             oos.writeObject(object);
         } catch (FileNotFoundException e) {
@@ -25,10 +25,10 @@ public class Serialize {
 
     public static Object deserializable() {
 
-        String fPath = "src\\serialize\\car.car";
+        String path = "src\\serialize\\car.car";
         FileInputStream fis = null;
         try {
-            fis = new FileInputStream(fPath);
+            fis = new FileInputStream(path);
         } catch (FileNotFoundException e) {
             System.out.println("FileNotFoundException");
         }
