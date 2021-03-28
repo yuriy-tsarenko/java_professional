@@ -1,6 +1,5 @@
 package com.java_professional.tsarenko.classwork.lesson7.ex_001_Annotations.methods;
 
-import javaProfessional.ex_001_Annotations.methods.AnotherDog;
 
 import java.lang.annotation.Annotation;
 import java.lang.reflect.Method;
