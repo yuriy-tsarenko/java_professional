@@ -17,7 +17,6 @@ public class Car implements Serializable {
 
     @Override
     public String toString() {
-        return "Car{" +
-                "name = " + name + " speed = " + speed + " color = " + color + " make = " + make + "}";
+        return "Car{name = " + name + " speed = " + speed + " color = " + color + " make = " + make + "}";
     }
 }

@@ -1,6 +1,5 @@
 package diledsys.homework.serialize.car;
 
-
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
