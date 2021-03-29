@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<vehicle>
+    <car>
+        <brand>BMW</brand>
+        <color>black</color>
+        <date>2021-26-03</date>
+        <price>10000</price>
+        <speed>200</speed>
+    </car>
+    <car>
+        <brand>BMW</brand>
+        <color>black</color>
+        <date>2021-29-03</date>
+        <price>15000</price>
+        <speed>250</speed>
+    </car>
+    <bike>
+        <brand>Kawasaki</brand>
+        <color>red</color>
+        <date>2021-26-03</date>
+        <price>5000</price>
+        <speed>230</speed>
+    </bike>
+    <bike>
+        <brand>Kawasaki</brand>
+        <color>red</color>
+        <date>2021-29-03</date>
+        <price>7000</price>
+        <speed>270</speed>
+    </bike>
+</vehicle>
