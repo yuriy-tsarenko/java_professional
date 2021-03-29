@@ -53,9 +53,7 @@ public class Reflection {
             int mod = method.getModifiers();
             System.out.println("Method name : " + method.getName());
             System.out.println("Modifier type : " + getModifier(mod));
-            System.out.println("Return type : " +
-                    method.getReturnType().getName());
-
+            System.out.println("Return type : " + method.getReturnType().getName());
             Class<?>[] params = method.getParameterTypes();
             System.out.print("Parameters : ");
             for (Class<?> paramType : params) {
