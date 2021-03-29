@@ -1,4 +1,4 @@
-package diledsys.homework.biard;
+package com.java_professional.diledsys.homework.biard;
 
 public class Biard implements Cloneable {
     private String name;
