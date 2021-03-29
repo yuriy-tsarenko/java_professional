@@ -3,12 +3,14 @@ package com.java_professional.tsarenko.classwork.lesson8.json.ex_003_jackson.ent
 import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonProperty;
+import lombok.Getter;
 import lombok.ToString;
 
 import java.util.List;
 
 @ToString
 @JsonIgnoreProperties(ignoreUnknown = true)
+@Getter
 public class Response {
 
     @JsonProperty("code")
