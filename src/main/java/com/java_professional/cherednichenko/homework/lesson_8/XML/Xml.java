@@ -4,7 +4,6 @@ import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.Setter;
 import org.xml.sax.Attributes;
-import org.xml.sax.SAXException;
 import org.xml.sax.helpers.DefaultHandler;
 
 import javax.xml.bind.JAXBContext;
@@ -32,7 +31,7 @@ public class Xml {
         }
     }
 
-    public void FromXml() {
+    public void fromXml() {
         try {
             SAXParserFactory factory = SAXParserFactory.newInstance();
             SAXParser saxParser = factory.newSAXParser();
@@ -58,7 +57,7 @@ public class Xml {
                 }
 
                 @Override
-                public void characters(char[] chars, int start, int length){
+                public void characters(char[] chars, int start, int length) {
                     if (name) {
                         System.out.println(new String(chars, start, length));
                         name = false;

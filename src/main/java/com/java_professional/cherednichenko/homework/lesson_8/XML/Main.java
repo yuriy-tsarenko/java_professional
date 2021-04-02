@@ -13,6 +13,6 @@ public class Main {
                 + "homework\\lesson_8\\XML\\Vehicle.xml");
         Xml xml = new Xml(file, vehicle);
         xml.toXml();
-        xml.FromXml();
+        xml.fromXml();
     }
 }

@@ -7,7 +7,7 @@ import javax.xml.bind.annotation.XmlElement;
 
 @AllArgsConstructor
 @NoArgsConstructor
-public class Bike{
+public class Bike {
     private String brand;
     private String speed;
     private String color;

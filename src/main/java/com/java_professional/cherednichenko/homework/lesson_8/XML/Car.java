@@ -1,14 +1,13 @@
 package com.java_professional.cherednichenko.homework.lesson_8.XML;
 
 import lombok.AllArgsConstructor;
-import lombok.Getter;
 import lombok.NoArgsConstructor;
 
 import javax.xml.bind.annotation.XmlElement;
 
 @AllArgsConstructor
 @NoArgsConstructor
-public class Car{
+public class Car {
     private String brand;
     private String speed;
     private String color;

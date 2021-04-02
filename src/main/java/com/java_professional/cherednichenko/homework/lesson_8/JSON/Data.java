@@ -14,19 +14,19 @@ public class Data {
     public String description;
     public String image;
     public String price;
-    public String discount_amount;
+    public String discountAmount;
     public boolean status;
     public List<Category> categories;
 
     @Override
     public String toString() {
-        return "\nid=" + id +
-                ", name='" + name + '\'' +
-                ", description='" + description + '\'' +
-                ", image='" + image + '\'' +
-                ", price='" + price + '\'' +
-                ", discount_amount='" + discount_amount + '\'' +
-                ", status=" + status +
-                ", categories=" + categories;
+        return "\nid=" + id
+                + ", name='" + name + '\''
+                + ", description='" + description + '\''
+                + ", image='" + image + '\''
+                + ", price='" + price + '\''
+                + ", discount_amount='" + discountAmount + '\''
+                + ", status=" + status
+                + ", categories=" + categories;
     }
 }

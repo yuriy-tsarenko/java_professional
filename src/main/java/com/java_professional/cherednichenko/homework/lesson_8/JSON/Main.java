@@ -11,7 +11,8 @@ import java.nio.file.Paths;
 public class Main {
     public static void main(String[] args) throws IOException {
         Gson gson = new GsonBuilder().serializeNulls().create();
-        Path path = Paths.get("src\\main\\java\\com\\java_professional\\cherednichenko\\homework\\lesson_8\\JSON\\package.json").toAbsolutePath();
+        Path path = Paths.get("src\\main\\java\\com\\java_professional\\cherednichenko"
+                + "\\homework\\lesson_8\\JSON\\package.json").toAbsolutePath();
         FileInputStream inputStream = new FileInputStream(path.toString());
         byte[] bytes = inputStream.readAllBytes();
         String json = new String(bytes);
