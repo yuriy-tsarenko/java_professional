@@ -1,5 +1,6 @@
 package com.java_professional.tsarenko.classwork.lesson2.ex_004_set;
 
+
 import lombok.AllArgsConstructor;
 import lombok.EqualsAndHashCode;
 import lombok.Getter;
