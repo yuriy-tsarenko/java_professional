@@ -1,0 +1,513 @@
+{
+  "code": 200,
+  "meta": {
+    "pagination": {
+      "total": 133,
+      "pages": 7,
+      "page": 1,
+      "limit": 20
+    }
+  },
+  "data": [
+    {
+      "id": 1,
+      "name": "Heavy Duty Concrete Bench",
+      "description": "Caritas suffoco amplitudo tergiversatio patruus demum terminatio terror argentum at neque deporto itaque thema ait umerus tamquam capillus debitis nulla calcar trucido toties tepidus cribro animi clibanus careo ventosus iure corrumpo calculus vesper viriliter et traho studio dolorem a tabula ipsam.",
+      "image": "https://loremflickr.com/250/250",
+      "price": "36311.18",
+      "discount_amount": "7461.57",
+      "status": true,
+      "categories": [
+        {
+          "id": 8,
+          "name": "Automotive, Computers \u0026 Electronics"
+        },
+        {
+          "id": 2,
+          "name": "Games \u0026 Grocery"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Lightweight Linen Shirt",
+      "description": "Desparatus spiritus theologus tollo calculus cuius animadverto quae admoveo utpote deleniti culpa victus creptio degenero audax cubitum thema attollo commodi tredecim quasi spiculum dignissimos arma alienus aequus nam vulpes argentum templum id aliqua odio dens deripio suppono tempore audentia iusto thesaurus supellex decor.",
+      "image": "https://loremflickr.com/250/250",
+      "price": "3743.67",
+      "discount_amount": "894.32",
+      "status": true,
+      "categories": [
+        {
+          "id": 11,
+          "name": "Baby, Industrial \u0026 Movies"
+        },
+        {
+          "id": 19,
+          "name": "Automotive \u0026 Computers"
+        },
+        {
+          "id": 20,
+          "name": "Grocery \u0026 Clothing"
+        },
+        {
+          "id": 7,
+          "name": "Garden, Jewelry \u0026 Electronics"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Gorgeous Silk Pants",
+      "description": "Trado arcus defessus nihil caelestis eligendi cognomen caute minus ver aveho tactus cilicium absum non creator textus torrens coniecto aut architecto vobis tergum tempus sunt sed esse adopto vos argumentum via tutamen.",
+      "image": "https://loremflickr.com/250/250",
+      "price": "5920.26",
+      "discount_amount": "4443.86",
+      "status": true,
+      "categories": [
+        {
+          "id": 13,
+          "name": "Movies"
+        },
+        {
+          "id": 15,
+          "name": "Industrial \u0026 Clothing"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "name": "Incredible Marble Plate",
+      "description": "Thesaurus usitas dapifer aut conatus deinde sollers supellex censura quis terga vulpes exercitationem ante capitulus quas tantum absum tero deporto sponte carcer deprimo terra rerum valde ea solum a eligendi subiungo aggredior voluptas virga modi conforto cerno crapula stipes enim valetudo non civis deduco vicissitudo demum deserunt voco consequatur vado tondeo abundans vix error tabella itaque cometes et ut.",
+      "image": "https://loremflickr.com/250/250",
+      "price": "8667.57",
+      "discount_amount": "3524.87",
+      "status": true,
+      "categories": [
+        {
+          "id": 11,
+          "name": "Baby, Industrial \u0026 Movies"
+        },
+        {
+          "id": 15,
+          "name": "Industrial \u0026 Clothing"
+        },
+        {
+          "id": 13,
+          "name": "Movies"
+        },
+        {
+          "id": 4,
+          "name": "Tools"
+        },
+        {
+          "id": 7,
+          "name": "Garden, Jewelry \u0026 Electronics"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "name": "Sleek Wool Bag",
+      "description": "Arbor argumentum coerceo adulescens adsum ratione aliqua vicinus ascit error fuga animus bis vel sponte tolero vitiosus vigor veniam facilis saepe subnecto valeo denuo enim benevolentia custodia patruus nemo venia acceptus soluta asporto.",
+      "image": "https://loremflickr.com/250/250",
+      "price": "11456.47",
+      "discount_amount": "7114.81",
+      "status": true,
+      "categories": [
+        {
+          "id": 1,
+          "name": "Shoes"
+        },
+        {
+          "id": 21,
+          "name": "Games, Industrial \u0026 Outdoors"
+        },
+        {
+          "id": 17,
+          "name": "Beauty"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "name": "Fantastic Bronze Plate",
+      "description": "Sustineo valeo volutabrum quo doloribus cultellus libero capio attollo alii tremo adulatio ulterius totidem ut territo tubineus et commodi depereo turba suppono quia adipisci demum debitis adinventitias accedo caries illo utilis auctor cognomen cibo taedium quidem expedita spiculum vulgivagus tibi cupressus acer perspiciatis decimus campana abscido antea cibus brevis adicio tabula crustulum torqueo armo culpa crinis audax solutio damno carbo apostolus et ipsum desino catena vero.",
+      "image": "https://loremflickr.com/250/250",
+      "price": "38159.49",
+      "discount_amount": "32106.84",
+      "status": true,
+      "categories": [
+        {
+          "id": 4,
+          "name": "Tools"
+        },
+        {
+          "id": 15,
+          "name": "Industrial \u0026 Clothing"
+        },
+        {
+          "id": 13,
+          "name": "Movies"
+        },
+        {
+          "id": 2,
+          "name": "Games \u0026 Grocery"
+        },
+        {
+          "id": 3,
+          "name": "Grocery \u0026 Computers"
+        },
+        {
+          "id": 20,
+          "name": "Grocery \u0026 Clothing"
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "name": "Synergistic Cotton Keyboard",
+      "description": "Patrocinor subiungo sumptus cum minus absens defigo uredo subseco vallum alii agnitio acquiro agnosco voluptas suffoco vestrum comis demum autem sunt cattus clementia campana mollitia conventus cunctatio statua dolore tenetur theologus curo demoror conitor supellex summa umbra ubi sed coniuratio adfero ambulo quos comminor tantum strenuus defetiscor ceno calamitas accedo tutis cribro volutabrum temeritas vinco amplus somnus virga aggredior textus allatus.",
+      "image": "https://loremflickr.com/250/250",
+      "price": "9497.94",
+      "discount_amount": "7658.82",
+      "status": true,
+      "categories": [
+        {
+          "id": 3,
+          "name": "Grocery \u0026 Computers"
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "name": "Durable Paper Plate",
+      "description": "Comitatus clamo vulgaris coma ulterius addo abeo venio ullus repellat bardus soluta tantillus aut nihil deinde amplus strenuus victoria subnecto earum eos totidem ut vero tutis patruus thema accusantium tempore alveus deputo bibo summopere peior adiuvo audax velit audeo dedecor absconditus avoco cariosus depulso colligo iure sunt crur celo vinco cicuta cresco rerum crapula conitor sit defungo aegrus decimus agnosco comis audentia convoco hic pecco ultio video.",
+      "image": "https://loremflickr.com/250/250",
+      "price": "41452.27",
+      "discount_amount": "27463.26",
+      "status": true,
+      "categories": [
+        {
+          "id": 12,
+          "name": "Electronics, Music \u0026 Sports"
+        },
+        {
+          "id": 2,
+          "name": "Games \u0026 Grocery"
+        },
+        {
+          "id": 6,
+          "name": "Computers"
+        },
+        {
+          "id": 3,
+          "name": "Grocery \u0026 Computers"
+        },
+        {
+          "id": 18,
+          "name": "Books \u0026 Games"
+        },
+        {
+          "id": 8,
+          "name": "Automotive, Computers \u0026 Electronics"
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "name": "Gorgeous Wool Gloves",
+      "description": "Aut decumbo vulnus turbo summa coniecto virgo amplus tubineus viriliter bonus cometes crapula temptatio paens vetus dolor theca adulescens tumultus aer facere curiositas suscipio qui reprehenderit uberrime certus depono verbera blanditiis auris tantum antea omnis cubicularis thema ut illo capto tremo via coaegresco aggredior similique trado brevis dolores cimentarius solio.",
+      "image": "https://loremflickr.com/250/250",
+      "price": "34051.03",
+      "discount_amount": "30723.58",
+      "status": true,
+      "categories": [
+        {
+          "id": 19,
+          "name": "Automotive \u0026 Computers"
+        },
+        {
+          "id": 5,
+          "name": "Sports"
+        },
+        {
+          "id": 7,
+          "name": "Garden, Jewelry \u0026 Electronics"
+        },
+        {
+          "id": 8,
+          "name": "Automotive, Computers \u0026 Electronics"
+        },
+        {
+          "id": 9,
+          "name": "Garden \u0026 Computers"
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "name": "Heavy Duty Paper Hat",
+      "description": "Capitulus deduco campana voluptatibus sto tabgo consectetur vapulus arcus atrox vesper versus sit tempus attero conservo ventus vero arbustum amplitudo sumptus volva arto tripudio modi decerno sunt speciosus in tardus nesciunt adiuvo corona spero est aut corroboro venustas coniecto adipiscor solium varius adsum pel vae vel.",
+      "image": "https://loremflickr.com/250/250",
+      "price": "26934.15",
+      "discount_amount": "13163.87",
+      "status": true,
+      "categories": [
+        {
+          "id": 9,
+          "name": "Garden \u0026 Computers"
+        },
+        {
+          "id": 14,
+          "name": "Outdoors \u0026 Movies"
+        },
+        {
+          "id": 13,
+          "name": "Movies"
+        },
+        {
+          "id": 15,
+          "name": "Industrial \u0026 Clothing"
+        },
+        {
+          "id": 2,
+          "name": "Games \u0026 Grocery"
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "name": "Enormous Silk Table",
+      "description": "Delego degusto unus carpo certe adulatio adinventitias adsum qui demoror stips commodi supra officiis constans cometes aestivus eos colo depopulo armo claudeo accusator et xiphias valens colloco non debitis sed vicissitudo acer sortitus voluptas eum amicitia carbo suadeo spes quia conforto auctor ultio stultus decerno labore depereo ut asper canis nobis pecto curtus venustas perferendis vestrum verecundia eius adstringo solum amet adultus dolor ventosus traho.",
+      "image": "https://loremflickr.com/250/250",
+      "price": "2408.2",
+      "discount_amount": "1613.99",
+      "status": true,
+      "categories": [
+        {
+          "id": 1,
+          "name": "Shoes"
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "name": "Rustic Aluminum Pants",
+      "description": "Volva tremo tamen acidus dolorem possimus conatus theatrum aut cavus vel ulterius adicio adversus calculus colo dapifer maxime ipsam odit commodi qui voluptatem cubicularis causa ut campana tutis absum cubitum testimonium voluntarius cupressus pecus decet crinis aeternus ultio quia tenax taceo claudeo clementia curvus ipsum valens aggero charisma et tergo antiquus vix ullus deludo suasoria coniuratio tricesimus basium vilicus.",
+      "image": "https://loremflickr.com/250/250",
+      "price": "26536.32",
+      "discount_amount": "11258.56",
+      "status": true,
+      "categories": [
+        {
+          "id": 2,
+          "name": "Games \u0026 Grocery"
+        }
+      ]
+    },
+    {
+      "id": 13,
+      "name": "Synergistic Marble Watch",
+      "description": "Ut amplexus ancilla usque vado uterque vulgus defluo arguo utique amet turbo vinitor est soluta sortitus delectus auxilium eius tepidus cibo libero omnis crur curvo concedo certe tonsor qui desino.",
+      "image": "https://loremflickr.com/250/250",
+      "price": "7107.38",
+      "discount_amount": "1238.84",
+      "status": true,
+      "categories": [
+        {
+          "id": 2,
+          "name": "Games \u0026 Grocery"
+        }
+      ]
+    },
+    {
+      "id": 14,
+      "name": "Sleek Wooden Shirt",
+      "description": "Cilicium stips commemoro universe recusandae tamquam vilitas reiciendis carus explicabo ut callide sophismata agnitio canto demum cerno adiuvo aranea audio tripudio beatae ulterius adipisci harum tepidus denuncio casso delinquo voluptatem comitatus comparo conturbo culpo infit ventosus sollers vetus corona.",
+      "image": "https://loremflickr.com/250/250",
+      "price": "3759.95",
+      "discount_amount": "2632.67",
+      "status": true,
+      "categories": [
+        {
+          "id": 7,
+          "name": "Garden, Jewelry \u0026 Electronics"
+        },
+        {
+          "id": 8,
+          "name": "Automotive, Computers \u0026 Electronics"
+        },
+        {
+          "id": 13,
+          "name": "Movies"
+        }
+      ]
+    },
+    {
+      "id": 15,
+      "name": "Small Iron Bag",
+      "description": "Vito quas averto aveho possimus voro aufero tremo amicitia color catena qui vivo est venio aeternus comitatus colligo vulgo paulatim desparatus talis conicio ducimus utique alioqui cariosus eum consectetur tendo confero comis summisse tonsor teneo arceo.",
+      "image": "https://loremflickr.com/250/250",
+      "price": "35365.47",
+      "discount_amount": "23435.42",
+      "status": true,
+      "categories": [
+        {
+          "id": 18,
+          "name": "Books \u0026 Games"
+        },
+        {
+          "id": 4,
+          "name": "Tools"
+        },
+        {
+          "id": 15,
+          "name": "Industrial \u0026 Clothing"
+        },
+        {
+          "id": 6,
+          "name": "Computers"
+        },
+        {
+          "id": 2,
+          "name": "Games \u0026 Grocery"
+        }
+      ]
+    },
+    {
+      "id": 16,
+      "name": "Fantastic Paper Wallet",
+      "description": "Amo cerno delego quaerat urbanus xiphias victus coniuratio brevis aeternus amicitia suspendo cernuus textus veritas timor odit confido cena turpis capto talus concedo deprecator ut comedo talis soluta spes.",
+      "image": "https://loremflickr.com/250/250",
+      "price": "5549.32",
+      "discount_amount": "4834.93",
+      "status": true,
+      "categories": [
+        {
+          "id": 17,
+          "name": "Beauty"
+        },
+        {
+          "id": 20,
+          "name": "Grocery \u0026 Clothing"
+        },
+        {
+          "id": 16,
+          "name": "Books \u0026 Toys"
+        },
+        {
+          "id": 11,
+          "name": "Baby, Industrial \u0026 Movies"
+        }
+      ]
+    },
+    {
+      "id": 17,
+      "name": "Aerodynamic Iron Gloves",
+      "description": "Repellat numquam depulso copiose accusamus spectaculum corrigo amplus certus ullus cubo decerno vulgivagus aer aspicio utpote synagoga voveo tunc tergum adimpleo spargo sequi traho vultuosus atavus aestas vorago calcar uter centum supellex.",
+      "image": "https://loremflickr.com/250/250",
+      "price": "7159.77",
+      "discount_amount": "1231.98",
+      "status": true,
+      "categories": [
+        {
+          "id": 3,
+          "name": "Grocery \u0026 Computers"
+        },
+        {
+          "id": 9,
+          "name": "Garden \u0026 Computers"
+        },
+        {
+          "id": 12,
+          "name": "Electronics, Music \u0026 Sports"
+        },
+        {
+          "id": 8,
+          "name": "Automotive, Computers \u0026 Electronics"
+        },
+        {
+          "id": 15,
+          "name": "Industrial \u0026 Clothing"
+        },
+        {
+          "id": 4,
+          "name": "Tools"
+        }
+      ]
+    },
+    {
+      "id": 18,
+      "name": "Intelligent Steel Wallet",
+      "description": "Curriculum non porro textor tabgo vel volva molestias claustrum uredo conturbo curia conduco voluptatem demo tabesco inflammatio curatio praesentium socius careo tener vero auditor reiciendis eveniet statua nemo coniecto animus vos occaecati arbor arcesso charisma deleniti desidero.",
+      "image": "https://loremflickr.com/250/250",
+      "price": "47534.13",
+      "discount_amount": "31775.35",
+      "status": true,
+      "categories": [
+        {
+          "id": 9,
+          "name": "Garden \u0026 Computers"
+        },
+        {
+          "id": 20,
+          "name": "Grocery \u0026 Clothing"
+        },
+        {
+          "id": 6,
+          "name": "Computers"
+        },
+        {
+          "id": 2,
+          "name": "Games \u0026 Grocery"
+        }
+      ]
+    },
+    {
+      "id": 19,
+      "name": "Awesome Wool Table",
+      "description": "Alveus demitto comburo conventus calamitas clarus degusto coerceo ante quas tamquam ultra decet cubo celebrer deripio acer vesica casus thymbra studio demulceo surgo dedecor aufero virgo aliquam vetus thorax suffoco adeo.",
+      "image": "https://loremflickr.com/250/250",
+      "price": "14322.82",
+      "discount_amount": "11868.48",
+      "status": true,
+      "categories": [
+        {
+          "id": 7,
+          "name": "Garden, Jewelry \u0026 Electronics"
+        }
+      ]
+    },
+    {
+      "id": 20,
+      "name": "Awesome Silk Gloves",
+      "description": "Cilicium timidus stabilis congregatio ciminatio cultellus vicinus vulgivagus consequuntur casso capto truculenter tabula certo stips aequitas tamisium dicta subito vir quae ultra arx tibi vilitas adfero decretum ut auctor cometes sed caveo vulticulus decumbo subiungo aut umquam tero voluptatem amo sursum victus tredecim territo contigo repellendus solum bene charisma cariosus.",
+      "image": "https://loremflickr.com/250/250",
+      "price": "4234.25",
+      "discount_amount": "1636.18",
+      "status": true,
+      "categories": [
+        {
+          "id": 17,
+          "name": "Beauty"
+        },
+        {
+          "id": 16,
+          "name": "Books \u0026 Toys"
+        },
+        {
+          "id": 3,
+          "name": "Grocery \u0026 Computers"
+        },
+        {
+          "id": 20,
+          "name": "Grocery \u0026 Clothing"
+        },
+        {
+          "id": 4,
+          "name": "Tools"
+        }
+      ]
+    }
+  ]
+}
