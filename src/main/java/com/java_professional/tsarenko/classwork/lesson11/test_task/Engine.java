@@ -10,7 +10,7 @@ public final class Engine {
     private static final Logger log = Logger.getLogger(Engine.class);
 
     //TODO: add javadoc
-    private final static String EXIT = "q";
+    private static final String EXIT = "q";
 
     //TODO: add javadoc
     private Engine() {
@@ -29,7 +29,7 @@ public final class Engine {
                 choice = reader.next();
             } catch (UnsupportedArgumentException e) {
                 log.error(e);
-                System.err.println(e);;
+                System.err.println(e);
             }
         }
     }
